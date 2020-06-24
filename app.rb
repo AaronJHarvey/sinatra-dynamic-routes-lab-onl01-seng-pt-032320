@@ -15,7 +15,7 @@ class App < Sinatra::Base
   get '/say/:number/:phrase' do 
     output = "" #sets empty string 
     params[:number].to_i.times do #retrieves the number given, turnes the number given from a string to an integer, tells it to enter a times loop for that number of repetitions 
-      output += params[:phrase] # changes the empty string to be te inputted phrase 
+      output += params[:phrase] # changes the empty string to be the inputted phrase however many times the current repetition is (i.e. repition 1 means the formerly empty string  
     end 
       output
    end 
