@@ -40,7 +40,8 @@ class App < Sinatra::Base
         answer = number1 - number2 
         answer.to_s
       when 'multiply'
-        answer = 
+        answer = number1 * number2 
+        answer.to_s
      end 
    end 
 end
