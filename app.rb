@@ -36,6 +36,11 @@ class App < Sinatra::Base
       when 'add'
        answer = number1 + number2
        answer.to_s
+      when 'subtract' 
+        answer = number1 - number2 
+        answer.to_s
+      when 'multiply'
+        answer = 
      end 
    end 
 end
