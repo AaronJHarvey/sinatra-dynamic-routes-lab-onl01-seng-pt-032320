@@ -42,6 +42,9 @@ class App < Sinatra::Base
       when 'multiply'
         answer = number1 * number2 
         answer.to_s
-     end 
-   end 
+      when 'divide'
+        answer = number1 / number2 
+        answer.to_s 
+      end 
+    end 
 end
