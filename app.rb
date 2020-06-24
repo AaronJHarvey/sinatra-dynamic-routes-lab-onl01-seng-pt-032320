@@ -21,4 +21,11 @@ class App < Sinatra::Base
     end #ends the times loop (only reached after the block has been repeated the given number of times)
       output #returns the formerly empty string which is now the given phrase repeated the given number of times.
    end 
+   
+   get '/say/:word1/:word2/:word3/:word4/:word5' do 
+     answer = params[:word1]
+   end 
+   
+   get '/:operation/:number1/:number2' do 
+   end 
 end
