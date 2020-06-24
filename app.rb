@@ -30,7 +30,11 @@ class App < Sinatra::Base
      number1 = params[:number1].to_i
      number2 = params[:number2].to_i
      
+     answer = "Unable to preform this operation"
+     
      case params[:operation]
-      when add
+      when 'add'
+       answer = number1 + number2
+       answer.to_s
    end 
 end
