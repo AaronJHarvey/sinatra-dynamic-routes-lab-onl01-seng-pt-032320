@@ -13,8 +13,8 @@ class App < Sinatra::Base
   end 
   
   get '/say/:number/:phrase' do 
-    output = ""
-    params[:number].to_i.times do 
+    output = "" #sets empty string 
+    params[:number].to_i.times do #retrieves the number given, turnes the number given from a string to an integer, tells it to repeat
       output += params[:phrase]
     end 
       output
